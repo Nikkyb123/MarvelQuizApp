@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">QuizAppMarvel</string>
+
+
+    <string name="title">Marvel Quiz App</string>
+    <string name="how_well">How well do you know your Marvel superheroes?</string>
+    <string name="q1">Question 1</string>
+    <string name="cap_america">Who is Captain America\'s archenemy?</string>
+    <string name="q2">Question 2</string>
+    <string name="defenders">Which two of the following superheroes are not part of Netflix\'s The Defenders?</string>
+    <string name="q3">Question 3</string>
+    <string name="sentry">Who is the Sentry\'s alter ego?</string>
+    <string name="q4">Question 4</string>
+    <string name="inhumans">Who is the leader of the Inhumans?</string>
+    <string name="q5">Question 5</string>
+    <string name="iron_man">Who is Iron Man\'s on/off girlfriend?</string>
+    <string name="q6">Question 6</string>
+    <string name="eddie">Is Eddie Brock Spiderman></string>
+    <string name="q7">Question 7</string>
+    <string name="tony">Which superhero is Tony Stark?</string>
+    <string name="q8">Question 8</string>
+    <string name="thor">Who is Thor\'s half brother?</string>
+    <string name="white_tiger">White Tiger</string>
+    <string name="elektra">Elektrs</string>#
+    <string name="daredevil">Daredevil</string>
+    <string name="jessica_jones">Jessica Jones</string>
+    <string name="iron_fist">Iron Fist</string>
+    <string name="bullseye">Bullseye</string>
+    <string name="luke_cage">Luke Cage</string>
+    <string name="vision">Vision</string>
+    <string name="punisher">The Punsiher</string>
+    <string name="the_void">The Void</string>
+    <string name="destroyer">The Destroyer</string>
+    <string name="abyss">The Abyss</string>
+    <string name="medusa">Medusa</string>
+    <string name="bolt">Black bolt</string>
+    <string name="maximus">Masximus</string>
+    <string name="betty">Betty Ross</string>
+    <string name="pepper">Pepper Potts</string>
+    <string name="magneto">Magneto</string>
+    <string name="red_skull">Red Skull</string>
+    <string name="dr_doom">Dr Doom</string>
+
+
+</resources>

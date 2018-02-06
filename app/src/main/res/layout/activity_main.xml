@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ed0033"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/marvel_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/marvel2" />
+
+            <TextView
+                android:id="@+id/how_well"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/marvelbolditalic"
+                android:gravity="center"
+                android:text="@string/how_well"
+                android:textColor="#ffea00"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/Question_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/marvelbold"
+            android:text="@string/q1"
+            android:textColor="#ffff" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:alwaysDrawnWithCache="false"
+            android:background="#ffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/cap" />
+
+
+            <TextView
+                android:id="@+id/Cap_America"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/americancaptain"
+                android:gravity="center_horizontal"
+                android:text="@string/cap_america"
+                android:textColor="#1565c0"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <RadioButton
+                    android:id="@+id/magneto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:focusable="auto"
+                    android:fontFamily="@font/americancaptain"
+                    android:onClick="onRadioButtonClicked1"
+                    android:text="@string/magneto"
+                    android:textColor="#1565c0" />
+
+                <RadioButton
+                    android:id="@+id/red_skull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="auto"
+                    android:fontFamily="@font/americancaptain"
+                    android:onClick="onRadioButtonClicked1"
+                    android:text="@string/red_skull"
+                    android:textColor="#1565c0" />
+
+                <RadioButton
+                    android:id="@+id/dr_doom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="auto"
+                    android:fontFamily="@font/americancaptain"
+                    android:onClick="onRadioButtonClicked1"
+                    android:text="@string/dr_doom"
+                    android:textColor="#1565c0" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/marvelbold"
+            android:text="@string/q2"
+            android:textColor="#ffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:theme="@style/MyCheckBox">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/defenders1" />
+
+
+            <TextView
+                android:id="@+id/defenders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/berlinsansdemi"
+                android:text="@string/defenders"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:id="@+id/white_tiger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:theme="@style/MyCheckBox"
+                        android:text="@string/white_tiger"
+                       />
+
+                    <CheckBox
+                        android:id="@+id/jessica_jones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/elektra"
+                        android:textColor="#FFFFFF"
+                        android:theme="@style/MyCheckBox" />
+                    <!--android:checked="true"-->
+
+
+                    <CheckBox
+                        android:id="@+id/daredevil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/daredevil"
+                        android:textColor="#FFFFFF" />
+                    <!--android:checked="true"-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:textColor="#ffff">
+
+                    <CheckBox
+                        android:id="@+id/elektra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/jessica_jones"
+                        android:textColor="#ffff" />
+
+                    <CheckBox
+                        android:id="@+id/iron_fist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/iron_fist"
+                        android:textColor="#ffff" />
+                    <!--android:checked="true"-->
+
+
+                   <CheckBox
+                        android:id="@+id/bullseye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/bullseye"
+                        android:textColor="#ffff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/vision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/vision"
+                        android:textColor="#ffff" />
+
+                    <CheckBox
+                        android:id="@+id/luke_cage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/luke_cage"
+                        android:textColor="#ffff" />
+
+
+
+                    <CheckBox
+                        android:id="@+id/punisher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/berlinsansdemi"
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/punisher"
+                        android:textColor="#ffff" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/marvelbold"
+            android:text="@string/q3"
+            android:textColor="#ffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/senty" />
+
+            <TextView
+                android:id="@+id/sentry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/starlord"
+                android:text="@string/sentry"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/the_void"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp"
+                    android:onClick="onRadioButtonClicked2"
+                    android:text="@string/the_void" />
+
+                <RadioButton
+                    android:id="@+id/destroyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked2"
+                    android:text="@string/destroyer" />
+
+                <RadioButton
+                    android:id="@+id/abyss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked2"
+                    android:text="@string/abyss" />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/marvelbold"
+            android:text="@string/q4"
+            android:textColor="#ffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/inhumans" />
+
+
+            <TextView
+                android:id="@+id/inhumans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/inhumanity"
+                android:text="@string/inhumans"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/medusa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="onRadioButtonClicked3"
+                    android:text="@string/medusa"
+                    android:textColor="#ffffff"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/bolt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="onRadioButtonClicked3"
+                    android:text="@string/bolt"
+                    android:textColor="#ffffff"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/maximus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="onRadioButtonClicked3"
+                    android:text="@string/maximus"
+                    android:textColor="#ffffff"
+                    android:theme="@style/MyCheckBox" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/marvelbold"
+            android:text="@string/q5"
+            android:textColor="#ffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ironman" />
+
+            <TextView
+                android:id="@+id/iron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/stark"
+                android:text="@string/iron_man"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/betty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/stark"
+                    android:onClick="onRadioButtonClicked4"
+                    android:text="@string/betty"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/jessica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/stark"
+                    android:onClick="onRadioButtonClicked4"
+                    android:text="@string/jessica_jones"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/pepper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/stark"
+                    android:onClick="onRadioButtonClicked4"
+                    android:text="@string/pepper"
+                    android:textColor="#000000" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/showscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:onClick="showscore"
+                android:text="Check Score" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
